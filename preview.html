@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WiFi Gratis</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:#0d1117;
+    color:white;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:350px;
+    background:#161b22;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 0 25px rgba(0,0,0,.5);
+    text-align:center;
+}
+
+.logo{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+h1{
+    margin:10px 0;
+    color:#58a6ff;
+}
+
+p{
+    color:#c9d1d9;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+    background:#21262d;
+    color:white;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:8px;
+    background:#238636;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2ea043;
+}
+
+.notice{
+    margin-top:20px;
+    padding:15px;
+    background:#1f2937;
+    border-radius:10px;
+    display:none;
+}
+
+.warning{
+    color:#ff7b72;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">📶</div>
+
+<h1>WiFi Gratis</h1>
+
+<p>Conéctate a Internet para continuar</p>
+
+<input type="text" placeholder="Correo electrónico">
+<input type="password" placeholder="Contraseña">
+
+<button onclick="showWarning()">
+Conectarse
+</button>
+
+<div class="notice" id="notice">
+
+<h2 class="warning">
+⚠️ Simulación Educativa
+</h2>
+
+<p>
+Este portal fue creado para demostrar cómo los atacantes
+pueden usar redes Wi-Fi falsas y códigos QR maliciosos.
+</p>
+
+<p>
+Nunca ingreses credenciales en redes públicas sin verificar:
+</p>
+
+<ul style="text-align:left;">
+<li>Nombre real de la red</li>
+<li>Certificados HTTPS</li>
+<li>Dominio del sitio</li>
+<li>Autenticidad del QR</li>
+</ul>
+
+<p>
+✅ No se almacenó ninguna información.
+</p>
+
+</div>
+
+</div>
+
+<script>
+function showWarning(){
+    document.getElementById("notice").style.display = "block";
+}
+</script>
+
+</body>
+</html>
